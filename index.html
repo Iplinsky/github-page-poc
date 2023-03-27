@@ -1,55 +1,94 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>Documentação de Código</title>
-    <link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8">
+    <title>Documentação de código</title>
+    <style>
+      body {
+        background-color: #f0f0f0;
+        font-family: Arial, sans-serif;
+        font-size: 16px;
+        line-height: 1.5;
+        margin: 0;
+        padding: 0;
+      }
+
+      header {
+        background-color: #333;
+        color: #fff;
+        padding: 1em;
+      }
+
+      h1 {
+        font-size: 2.5em;
+        margin: 0;
+      }
+
+      main {
+        max-width: 800px;
+        margin: 0 auto;
+        padding: 1em;
+      }
+
+      .code {
+        background-color: #ddd;
+        border-radius: 5px;
+        font-family: Consolas, monospace;
+        padding: 1em;
+      }
+
+      .code pre {
+        margin: 0;
+      }
+
+      footer {
+        background-color: #333;
+        color: #fff;
+        padding: 1em;
+        text-align: center;
+      }
+    </style>
   </head>
   <body>
     <header>
-      <h1>Documentação de Código</h1>
-      <nav>
-        <ul>
-          <li><a href="#introducao">Introdução</a></li>
-          <li><a href="#instalacao">Instalação</a></li>
-          <li><a href="#exemplos">Exemplos de Uso</a></li>
-        </ul>
-      </nav>
+      <h1>Documentação de código</h1>
     </header>
     <main>
-      <section id="introducao">
-        <h2>Introdução</h2>
-        <p>Esta é a documentação de código para a biblioteca AwesomeLib. A AwesomeLib é uma biblioteca para trabalhar com dados incríveis.</p>
-        <p>Esta documentação de código contém informações sobre como usar a biblioteca, como instalar e exemplos de uso.</p>
-      </section>
-      <section id="instalacao">
-        <h2>Instalação</h2>
-        <p>Para instalar a biblioteca, basta baixar o arquivo <code>awesomelib.js</code> e incluí-lo em seu projeto.</p>
-        <pre><code>&lt;script src="awesomelib.js">&lt;/script></code></pre>
-      </section>
-      <section id="exemplos">
-        <h2>Exemplos de Uso</h2>
-        <p>A seguir estão alguns exemplos de como usar a biblioteca AwesomeLib.</p>
-        <h3>Exemplo 1</h3>
-        <pre><code>const data = [1, 2, 3, 4, 5];
-const result = AwesomeLib.sum(data);
-console.log(result); // output: 15</code></pre>
-        <h3>Exemplo 2</h3>
-        <pre><code>const data = [
-  { name: "João", age: 25 },
-  { name: "Maria", age: 30 },
-  { name: "Pedro", age: 20 }
-];
-const result = AwesomeLib.filter(data, person => person.age &lt; 30);
-console.log(result); /* output:
-[
-  { name: "João", age: 25 },
-  { name: "Pedro", age: 20 }
-] */
-</code></pre>
-      </section>
+      <h2>Introdução</h2>
+      <p>
+        Esta é a documentação do código-fonte do projeto X, desenvolvido por Y. Neste documento, você encontrará informações sobre como o código está organizado e como você pode contribuir com o desenvolvimento do projeto.
+      </p>
+
+      <h2>Organização do código</h2>
+      <p>
+        O código está organizado em pastas de acordo com a funcionalidade que cada uma delas oferece. A pasta <strong>src</strong> contém os arquivos fonte do projeto, enquanto a pasta <strong>test</strong> contém os testes automatizados. Há ainda a pasta <strong>docs</strong>, que contém a documentação do projeto.
+      </p>
+
+      <h2>Uso de bibliotecas</h2>
+      <p>
+        O projeto utiliza as seguintes bibliotecas:
+      </p>
+      <ul>
+        <li>Biblioteca 1</li>
+        <li>Biblioteca 2</li>
+        <li>Biblioteca 3</li>
+      </ul>
+
+      <h2>Código-fonte</h2>
+      <p>
+        Abaixo está um exemplo de código utilizado no projeto:
+      </p>
+      <div class="code">
+        <pre>
+<code>// Exemplo de código
+function exemplo() {
+  console.log('Exemplo');
+}</code>
+        </pre>
+      </div>
     </main>
     <footer>
-      <p>Copyright &copy; 2023</p>
+      <p>&copy; 2023 - Todos os direitos reservados</p>
     </footer>
   </body>
 </html>

@@ -1,15 +1,55 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>Minha Página</title>
+    <title>Documentação de Código</title>
+    <link rel="stylesheet" href="style.css">
   </head>
   <body>
-    <h1>Bem-vindo à minha página</h1>
-    <p>Esta é uma página de exemplo.</p>
-    <ul>
-      <li>Item 1</li>
-      <li>Item 2</li>
-      <li>Item 3</li>
-    </ul>
+    <header>
+      <h1>Documentação de Código</h1>
+      <nav>
+        <ul>
+          <li><a href="#introducao">Introdução</a></li>
+          <li><a href="#instalacao">Instalação</a></li>
+          <li><a href="#exemplos">Exemplos de Uso</a></li>
+        </ul>
+      </nav>
+    </header>
+    <main>
+      <section id="introducao">
+        <h2>Introdução</h2>
+        <p>Esta é a documentação de código para a biblioteca AwesomeLib. A AwesomeLib é uma biblioteca para trabalhar com dados incríveis.</p>
+        <p>Esta documentação de código contém informações sobre como usar a biblioteca, como instalar e exemplos de uso.</p>
+      </section>
+      <section id="instalacao">
+        <h2>Instalação</h2>
+        <p>Para instalar a biblioteca, basta baixar o arquivo <code>awesomelib.js</code> e incluí-lo em seu projeto.</p>
+        <pre><code>&lt;script src="awesomelib.js">&lt;/script></code></pre>
+      </section>
+      <section id="exemplos">
+        <h2>Exemplos de Uso</h2>
+        <p>A seguir estão alguns exemplos de como usar a biblioteca AwesomeLib.</p>
+        <h3>Exemplo 1</h3>
+        <pre><code>const data = [1, 2, 3, 4, 5];
+const result = AwesomeLib.sum(data);
+console.log(result); // output: 15</code></pre>
+        <h3>Exemplo 2</h3>
+        <pre><code>const data = [
+  { name: "João", age: 25 },
+  { name: "Maria", age: 30 },
+  { name: "Pedro", age: 20 }
+];
+const result = AwesomeLib.filter(data, person => person.age &lt; 30);
+console.log(result); /* output:
+[
+  { name: "João", age: 25 },
+  { name: "Pedro", age: 20 }
+] */
+</code></pre>
+      </section>
+    </main>
+    <footer>
+      <p>Copyright &copy; 2023</p>
+    </footer>
   </body>
 </html>
